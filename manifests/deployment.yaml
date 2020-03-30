@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: argocd-playground
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: argocd-playground
+  template:
+    metadata:
+      labels:
+        app: argocd-playground
+    spec:
+      containers:
+      - image: wingkwong/argocd-playground:latest
+        name: argocd-playground
+        ports:
+        - containerPort: 8888
