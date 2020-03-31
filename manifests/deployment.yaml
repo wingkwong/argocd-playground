@@ -14,7 +14,7 @@ spec:
         app: argocd-playground
     spec:
       containers:
-      - image: wingkwong/argocd-playground:v1
+      - image: wingkwong/argocd-playground:v2
         name: argocd-playground
         ports:
         - containerPort: 8888
