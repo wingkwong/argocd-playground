@@ -17,5 +17,5 @@ func main() {
 
 func Handler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Add("Content-Type", "application/json")
-	io.WriteString(w, `{"status":"ok"}`)
+	io.WriteString(w, `{"status":"ok", "message": "hello-world"}`)
 }
