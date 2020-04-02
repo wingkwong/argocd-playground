@@ -258,6 +258,9 @@ Now you can see the new changes
 k3d delete -n argocd-playground
 ```
 
+# Comparing with FluxCD
+Argo CD allows users to sync in an application level instead of a repository level by setting the Path. It supports different templating such as kustomize, helm, ksonnet, jsonnet, etc. With an UI portal, users can simply manage the application there. However, it cannot monitor a docker repository and deploy from the repository. The docker image needs to be manually updated for each updates.  
+
 # Useful links
 [Argo CD](https://argoproj.github.io/argo-cd/)
 
