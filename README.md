@@ -1,6 +1,6 @@
 # argocd-playground
 
-Demostrating how to setup Argo CD on a k3s cluster using arkade and k3d. 
+Demonstrating how to setup Argo CD on a k3s cluster using arkade and k3d. 
 
 > This is just a learning playground
 
@@ -262,6 +262,6 @@ k3d delete -n argocd-playground
 Argo CD allows users to sync in an application level instead of a repository level by setting the Path. It supports different templating such as kustomize, helm, ksonnet, jsonnet, etc. With an UI portal, users can simply manage the application there. However, it cannot monitor a docker repository and deploy from the repository. The docker image needs to be manually updated for each updates.  
 
 # Useful links
-[Argo CD](https://argoproj.github.io/argo-cd/)
-
-[arkade](https://github.com/alexellis/arkade#get-arkade)
+- [Argo CD](https://argoproj.github.io/argo-cd/)
+- [arkade](https://github.com/alexellis/arkade#get-arkade)
+- [k3d](https://github.com/rancher/k3d)
